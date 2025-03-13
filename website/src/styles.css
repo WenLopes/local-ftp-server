@@ -1,0 +1,95 @@
+/* Estilização geral */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Faz com que a página ocupe 100% da altura da tela */
+}
+
+/* Centraliza o container */
+.container {
+  width: 90%;
+  max-width: 500px;
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Ajuste do título */
+h2, h3 {
+  color: #ffffff;
+}
+
+/* Caixa de upload */
+.upload-box {
+  margin-bottom: 20px;
+}
+
+input[type="file"] {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+button {
+  padding: 8px 15px;
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* Lista de arquivos */
+.file-list {
+  margin-top: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 10px 0;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #1e90ff;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Feedback de Mensagens */
+.message {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.success {
+  background-color: #28a745;
+  color: white;
+}
+
+.error {
+  background-color: #dc3545;
+  color: white;
+}
