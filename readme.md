@@ -1,3 +1,5 @@
+# Work in progress
+
 # Servidor de Arquivos com Go e React
 
 Esta aplicação permite o upload e download de arquivos em uma rede local.
@@ -10,9 +12,11 @@ go run main.go
 ```
 
 ### 2. Fronted (React)
+```sh
 cd website
 npm install
 npm run build
+```
 
 Agora acesse http://localhost:8080/ no navegador.
 
