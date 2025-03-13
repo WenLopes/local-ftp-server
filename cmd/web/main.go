@@ -55,7 +55,7 @@ func uploadHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	err := r.ParseMultipartForm(10 << 20) // 10MB máximo por upload
+	err := r.ParseMultipartForm(10 << 20)
 	if err != nil {
 		http.Error(w, "Arquivo muito grande", http.StatusBadRequest)
 		return
@@ -97,13 +97,11 @@ func deleteFileHandler(w http.ResponseWriter, r *http.Request) {
 
 	filePath := filepath.Join(sharedDir, filename)
 
-	// Verifica se o arquivo existe
 	if _, err := os.Stat(filePath); os.IsNotExist(err) {
 		http.Error(w, "Arquivo não encontrado", http.StatusNotFound)
 		return
 	}
 
-	// Remove o arquivo
 	err := os.Remove(filePath)
 	if err != nil {
 		http.Error(w, "Erro ao deletar arquivo", http.StatusInternalServerError)
